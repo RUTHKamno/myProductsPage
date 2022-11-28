@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather,wght@1,300;1,700&family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather' ;
+  
+}
+body{
+    background-image: linear-gradient(0deg, rgb(239,228,176), rgb(239,228,176));
+    color: black;
+    min-width: 100vh; 
+   
+}
+.section, .nav
+{
+    width: 400px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 50px;
+    
+}
+.nav{
+    border-right:  2px  black solid;
+    padding: 5px 5px;
+    margin: 10px;
+}
+.sign_in,.notes{
+    width: 12rem;
+    height: 7rem;
+    overflow: hidden;
+    border: 3px black solid;
+    border-radius: 20px;
+    
+}
+.sign_in > p,
+.notes > p,
+.comment > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: larger;
+
+}
+.sign_in > button
+{
+    width: 7rem;
+    position: absolute;
+    top: 10.8rem;
+    left: 2.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none; /* pour mozilla*/
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-color: rgb(239,228,176);
+    font-weight: 700;
+    font-size: large;
+    box-shadow: 2px 2px 20px 1px black,
+    inset 1px 0px 5px 1px,
+    inset 1px 0px 6px 0px, 
+    inset 1px 1px 7px 1px;
+    border-radius: 20px;
+
+}
+.notes > i{
+ display: block;
+ width: 10rem;
+ position: absolute;
+ text-align: center;
+ left: 1rem;
+ 
+ 
+}
+.notes > input{
+    width: 10rem;
+    margin: 10px;
+    height: 15px;
+    text-align: center;
+    border-radius: 30px;
+    inset: 20px;
+    
+}
+.notes > div{
+    padding: 5px;
+}
+.comment {
+    border-top: 2px black solid;
+}
+.comment > textarea{
+position: relative;
+left: 27px;
+}
+.comment label{
+    font-weight: bold;
+    font-size: large;
+}
+.container_All{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.header
+{
+    width: 1fr;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    position: relative;
+    bottom: 36em;
+}
+.sign_in_out > button{
+    width: 7rem;
+    -webkit-appearance: none;
+    -moz-appearance: none; /* pour mozilla*/
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-color: rgb(239,228,176);
+    font-weight: 700;
+    font-size: large;
+    box-shadow: 2px 2px 20px 1px black,
+    inset 1px 0px 5px 1px,
+    inset 1px 0px 6px 0px, 
+    inset 1px 1px 7px 1px;
+    border-radius: 20px;
+
+}
+.menuItem  > ul
+{
+    position: absolute;
+    top: 5rem;
+    left: 28rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+    background: white;
+    border-radius: 10px;
+    border: 2px white solid;
+    width: 1080px;
+    list-style: none;
+    font-weight: bold;
+    font-size: large;
+
+}
+.menuItem > input{
+    position: absolute;
+    top:10rem ;
+    right: 55rem;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none; /* pour mozilla*/
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-color: white;
+}
+.menuItem i{
+    position: absolute;
+    right: 55rem;
+    font-size: larger;
+    top: 10rem;
+    background: black;
+    color: white;
+    height: 25px;
+    width: 25px;
+    align-items: flex-end;
+    cursor: pointer;
+}
+.menuItem select{
+    position: absolute;
+    right: 1rem;
+    top: 10rem;
+    -webkit-appearance: none;
+    -moz-appearance: none; /* pour mozilla*/
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    width: 10rem;
+    height: 22px;
+    text-align: center;
+}
+.menuItem select::after{
+    content: "\25BC";
+    color: white;
+    background-color: black;
+}
+.menuItem p{
+    position: absolute;
+    right: 12rem;
+    top: 10rem;
+    font-size: large;
+    font-weight: 800;
+}
+.featuresProducts{
+    position: absolute;
+    top: 19rem;
+    left: 28rem;
+   
+    display: flex;
+    flex-direction: row;
+
+
+}
+.product{
+    display: grid;
+    grid-template-columns: 300px 300px 300px ;
+    grid-gap: 5rem;
+}
+.product img{
+   
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 30px;
+    background: white;
+    align-items: center;
+    text-align: center;
+    /*box-shadow: 1px 1px 2px 5px white,
+    inset 1px 2px 0px 1px,
+    inset 1px 1px 1px 0px,
+    inset 1px 2px 2px 2px;*/
+}
+.products1 > p{
+    width: 300px;
+    position: relative;
+    top: 2rem;
+    font-weight: 700;
+    font-size: large;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer; 
+    transition:transform 2s;
+    
+}
+.products1 > p:hover{
+    
+    
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    transform: translateY(20px);
+    transform-origin: 20%; 
+}
+.products1{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    width: 300px;
+    height: 350px;
+    border-top-left-radius:30px ;
+    text-align: center;
+    align-items: center;
+    border-top-right-radius:30px ;
+}
+.products1 > h3{
+    text-align: center;
+    padding: 5px;
+    font-family: 'Merriweather';
+
+}
+
+

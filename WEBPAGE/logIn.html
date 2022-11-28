@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../STYLES/style1.css">
+</head>
+<body>
+    <div class="container">
+        <form >
+            <label for="name">NOM : </label>
+            <input type="text" id="name" required><br>
+            <label for="mail">EMAIL :</label>
+            <input type="email" name="" id="mail" required><br>
+            <a onclick="login()">SE CONNECTER</a>
+            
+        </form>
+    </div>
+
+
+
+
+
+
+<script>
+    function login(){
+        var  nom = document.getElementById('name');
+        var  email = document.getElementById('mail')
+        
+    if (nom.value == "Kamno" && email.value == "kamnokamcher@gmail.com")
+    {
+        window.location.href = "index.html"
+
+    }
+    else
+    {
+        alert("vous n'etes pas membre de l'équipe flowers")
+    }
+    }
+    
+  
+</script>
+</body>
+</html>
